@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'Home_images/icon.ico' %}" />
+    <title>Groww</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Home_style.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Home_utils.css' %}">
+</head>
+
+<body>
+    <nav class="topnav">
+        <div class="topleft">
+            <div>
+                {% load static %}
+                <img src="{% static 'Home_images/logo.jpg' %}" alt="Groww" class="logo">
+            </div>
+            <div class="title">
+                Groww
+            </div>
+        </div>
+
+        <div class="toplinks">
+            <div>
+                {% load static %}
+                <a href="" class="nav_1">Explore</a>
+            </div>
+            <div>
+                {% load static %}
+                <a href="" class="nav_2">Investment</a>
+            </div>
+        </div>
+
+        <div class="sb-example-1">
+            <div class="search">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+                <input type="text" class="searchTerm" placeholder="What are you looking for today?">
+            </div>
+        </div>
+
+        <div class="topicons">
+            <div>
+                {% load static %}
+                <a href="">
+                    <span class="material-symbols-outlined">notifications</span>
+                </a>
+            </div>
+            <div>
+                {% load static %}
+                <a href="">
+                    <span class="material-symbols-outlined">wallet</span>
+                </a>
+            </div>
+            <div>
+                {% load static %}
+                <a href="">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            {% load static %}
+            <img src="{% static 'Home_images/login_img.png' %}" alt="login" class="circle">
+        </div>
+    </nav>
+
+    <nav class="midnav">
+        <div>
+            {% load static %}
+            <a href="#">Stocks</a>
+        </div>
+        <div>
+            {% load static %}
+            <a href="#">Mutual Funds</a>
+        </div>
+        <div>
+            {% load static %}
+            <a href="#">Fixed Deposits</a>
+        </div>
+        <div>
+            {% load static %}
+            <a href="#">US Stocks</a>
+        </div>
+    </nav>
+    <hr style="height:0.5px;border-width:0;    color: #d8d8d8;background-color: #ece6e6;">
+    <div class="main flex">
+        <div class="dashboard flex">
+            <div class="d1">
+                <div class="dh">MARKET OPENS AT 9:15 AM TOMORROW</div>
+                <div class="hrow-1 flex ">
+
+                    <div class="ind">Index</div>
+                    <div class="scr">SCREENER</div>
+                </div>
+                <div class="row-0 flex">
+                    <div class="crow-11 box box-shadow ">
+                        <div class="mb fw">NIFTY 50</div>
+                        <div class="fw">15,782.15 <span class="fw">-25.85 (0.16%)</span></div>
+                    </div>
+                    <div class="crow-12 box box-shadow">
+                        <div class="mb fw">SENSEX</div>
+                        <div class="fw">52,793.62 <span class="fw">-136.69 (0.26%)</span></div>
+                    </div>
+                    <div class="crow-13 box box-shadow">
+                        <div class="mb fw">BANKNIFTY</div>
+                        <div class="fw">33,121.35 <span class="fw">-410.80 (1.23%)</span></div>
+                    </div>
+                </div>
+
+                <div class="hrow-1 flex ">
+
+                    <div class="ind">Top Gainers &nbsp; <span style="font-size:19px;">NIFTY100</span></div>
+                    <div class="scr" style="background-color: white;">SEE MORE</div>
+                </div>
+                <div class="row-1 flex">
+                    <div class="crow-11 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE155A01022.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Tata Motors</div>
+                        <div class="fw">₹404.30 <span class="fw gr">32.00 (0.16%)</span></div>
+                    </div>
+                    <div class="crow-12 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE203G01027.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Indraprasta Gas</div>
+                        <div class="fw">₹372.65 <span class="fw gr">26.70 (0.26%)</span></div>
+                    </div>
+                    <div class="crow-13 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE545U01014.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Bandhan Bank</div>
+                        <div class="fw">₹317.45 <span class="fw gr">13.30 (1.23%)</span></div>
+                    </div>
+                    <div class="crow-14 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE854D01024.webp' %}" alt=""></div>
+                        <div class="mb1 fw">United Spirits</div>
+                        <div class="fw">₹822.55 <span class="fw gr">30.85 (1.23%)</span></div>
+                    </div>
+                </div>
+                <div class="hrow-1 flex ">
+                    <div class="ind">Popular Stocks</div>
+                </div>
+                <div class="row-1 flex">
+                    <div class="crow-11 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE155A01022.webp' %}" alt=""></div>
+                        <div class="mb1 fw margin_bottom">Tata Motors</div>
+                        <div class="fw">₹404.30 <span class="fw gr">32.00 (0.16%)</span></div>
+                    </div>
+                    <div class="crow-12 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE203G01027.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Indraprasta Gas</div>
+                        <div class="fw">₹372.65 <span class="fw gr">26.70 (0.26%)</span></div>
+                    </div>
+                    <div class="crow-13 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE545U01014.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Bandhan Bank</div>
+                        <div class="fw">₹317.45 <span class="fw gr">13.30 (1.23%)</span></div>
+                    </div>
+                    <div class="crow-14 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE854D01024.webp' %}" alt=""></div>
+                        <div class="mb1 fw">United Spirits</div>
+                        <div class="fw">₹822.55 <span class="fw gr">30.85 (1.23%)</span></div>
+                    </div>
+                </div>
+                <div class="hrow-1 flex ">
+
+                    <div class="ind">Stocks in News</div>
+                    <div class="scr">NEWS</div>
+                </div>
+                <div class="row-1 flex">
+                    <div class="crow-11 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE155A01022.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Tata Motors</div>
+                        <div class="fw">₹404.30 <span class="fw gr">32.00 (0.16%)</span></div>
+                    </div>
+                    <div class="crow-12 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE203G01027.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Indraprasta Gas</div>
+                        <div class="fw">₹372.65 <span class="fw gr">26.70 (0.26%)</span></div>
+                    </div>
+                    <div class="crow-13 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE545U01014.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Bandhan Bank</div>
+                        <div class="fw">₹317.45 <span class="fw gr">13.30 (1.23%)</span></div>
+                    </div>
+                    <div class="crow-14 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE854D01024.webp' %}" alt=""></div>
+                        <div class="mb1 fw">United Spirits</div>
+                        <div class="fw">₹822.55 <span class="fw gr">30.85 (1.23%)</span></div>
+                    </div>
+                </div>
+                <div class="hrow-1 flex ">
+
+                    <div class="ind">Top Losers &nbsp; <span style="font-size:19px;">NIFTY100</span></div>
+                    <div class="scr" style="background-color: white;">SEE MORE</div>
+                </div>
+                <div class="row-1 flex">
+                    <div class="crow-11 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE155A01022.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Tata Motors</div>
+                        <div class="fw">₹404.30 <span class="fw gr">32.00 (0.16%)</span></div>
+                    </div>
+                    <div class="crow-12 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE203G01027.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Indraprasta Gas</div>
+                        <div class="fw">₹372.65 <span class="fw gr">26.70 (0.26%)</span></div>
+                    </div>
+                    <div class="crow-13 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE545U01014.webp' %}" alt=""></div>
+                        <div class="mb1 fw">Bandhan Bank</div>
+                        <div class="fw">₹317.45 <span class="fw gr">13.30 (1.23%)</span></div>
+                    </div>
+                    <div class="crow-14 box box-shadow">
+                        <div>{% load static %}<img class="wid mb" src="{% static 'Home_images/INE854D01024.webp' %}" alt=""></div>
+                        <div class="mb1 fw">United Spirits</div>
+                        <div class="fw">₹822.55 <span class="fw gr">30.85 (1.23%)</span></div>
+                    </div>
+                </div>
+                <div class="hrow-1 flex ">
+
+                    <div class="ind">Top Sectors</div>
+                    <div class="scr" style="background-color:white ;">SEE ALL</div>
+                </div>
+                <div class="flex sec1">
+                    <div>Banking <span style="color: #ecedef;"> &nbsp;|&nbsp; </span><span class="gr fw"> 36</span></div>
+                    <div>Energy <span style="color: #ecedef;"> &nbsp;|&nbsp; </span><span class="gr fw"> 88</span></div>
+                    <div>Healthcare<span style="color: #ecedef;"> &nbsp;|&nbsp; </span><span class="gr fw"> 203</span></div>
+                    <div>FMCG <span style="color: #ecedef;"> &nbsp;|&nbsp; </span><span class="gr fw"> 201</span></div>
+                    <div>Automobile<span style="color: #ecedef;"> &nbsp;|&nbsp; </span><span class="gr fw"> 131</span></div>
+                </div>
+                <div class="flex sec2">
+                    <div>Tele-Communication <span style="color: #ecedef;"> &nbsp;|&nbsp; </span><span class="gr fw"> 50</span></div>
+                    <div>Media &amp; Entertainment <span style="color: #ecedef;"> &nbsp;|&nbsp; </span><span class="gr fw"> 92</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="leftdashboard flex">
+            <div class="leftdashboard1 box-shadow flex">
+                <div class="ld1-1 flex rec">
+                    {% load static %}
+                    <img src="{% static 'Home_images/candlestick.png' %}" alt="F&O">
+                    <span class="text-1">F&O - Futures and Options</span>
+                </div>
+                <div class="ld1-2 flex rec">
+                    {% load static %}
+                    <img src="{% static 'Home_images/shapes.png' %}" alt="F&O">
+                    <span class="text-1">ETF - Exchange Traded Funds</span>
+                </div>
+                <div class="ld1-3 flex rec">
+                    {% load static %}
+                    <img src="{% static 'Home_images/megaphone.png' %}" alt="F&O">
+                    <span class="text-1">IPO - Initial Public Offerings</span>
+                </div>
+                <div class="ld1-4 flex rec">
+                    {% load static %}
+                    <img src="{% static 'Home_images/pentagon.png' %}" alt="F&O">
+                    <span class="text-1">SGB - Sovereign Gold Bond</span>
+                </div>
+            </div>
+            <div class="leftdashboard2 flex box-shadow">
+                <div class="l1 flex jcb">
+                    <div class="heading">Your Investments</div>
+                    <div class="expand">{% load static %}<img src="{% static 'Home_images/diagonal-arrow.png' %}" alt="expand"></div>
+                </div>
+                <div class="l2 flex jcb">
+                    <span class="returns">+ ₹1000</span>
+                    <span class="value">₹14,000</span>
+                </div>
+                <div class="l3 flex jcb">
+                    <div>Total Returns</div>
+                    <div>Current Value</div>
+                </div>
+                <hr class="line">
+                <div class="l4 flex">
+                    <div class="l41 flex">
+                        <div class="l41-1 flex jcb">
+                            <span class="l41-10">Adani Power</span>
+                            <span class="l41-11">₹294.70</span>
+                        </div>
+                        <div class="l41-2 flex jcb">
+                            <span class="l41-20"><span class="shares">1</span> shares @  ₹125.55</span>
+                            <span class="l41-21">(₹125.55)</span>
+                        </div>
+                    </div>
+                    <div class="l41 flex">
+                        <div class="l41-1 flex jcb">
+                            <span class="l41-10">Tata Motors</span>
+                            <span class="l41-11">₹294.70</span>
+                        </div>
+                        <div class="l41-2 flex jcb">
+                            <span class="l41-20"><span class="shares">1</span> shares @  ₹125.55</span>
+                            <span class="l41-21">(₹125.55)</span>
+                        </div>
+                    </div>
+                    <div class="l41 flex">
+                        <div class="l41-1 flex jcb">
+                            <span class="l41-10">Tata Power</span>
+                            <span class="l41-11">₹294.70</span>
+                        </div>
+                        <div class="l41-2 flex jcb">
+                            <span class="l41-20"><span class="shares">1</span> shares @  ₹125.55</span>
+                            <span class="l41-21">(₹125.55)</span>
+                        </div>
+                    </div>
+                    <div class="l41 flex">
+                        <div class="l41-1 flex jcb">
+                            <span class="l41-10">Coal India</span>
+                            <span class="l41-11">₹294.70</span>
+                        </div>
+                        <div class="l41-2 flex jcb">
+                            <span class="l41-20"><span class="shares">1</span> shares @  ₹125.55</span>
+                            <span class="l41-21">(₹125.55)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="line topfooter">
+            <div class="topfooterinside">
+                <div class="col_1">
+                    <div class="title">
+                        <div>
+                            {% load static %}
+                            <img src="{% static 'Home_images/logo.jpg' %}" alt="Groww" class="logo">
+                        </div>
+                        <div class="title">
+                            Groww
+                        </div>
+                    </div>
+                    <div class="address">
+                        <ul>
+                            <li>No. 11, 2nd floor, 80 FT Road</li>
+                            <li>4th block, S.T Bed, Koramangla</li>
+                            <li>Bengaluru - 560034</li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <div>{% load static %}<a style="width: 19px;" href="#" class="fa fa-facebook"></a></div>
+                        <div>{% load static %}<a href="#" class="fa fa-twitter"></a></div>
+                        <div>{% load static %}<a style="width: 19px;" href="#" class="fa fa-youtube"></a></div>
+                        <div>{% load static %}<a style="width: 19px;" href="#" class="fa fa-instagram"></a></div>
+                        <div>{% load static %}<a style="width: 19px;" href="#" class="fa fa-linkedin"></a></div>
+                        <div>{% load static %}<a href="#" class="fa fa-telegram"></a></div>
+                    </div>
+                </div>
+                <div class="col_2">
+                    <div class="products">PRODUCTS</div>
+                    <div class="productlist">
+                        <ul>
+                            <li>Stocks</li>
+                            <li>Futures & Options</li>
+                            <li>Mutual Funds</li>
+                            <li>Fixed Deposits</li>
+                            <li>US Stocks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_3">
+                    <div class="GROWW">GROWW</div>
+                    <div class="GROWWlist">
+                        <ul>
+                            <li>About Us</li>
+                            <li>Pricing</li>
+                            <li>Blog</li>
+                            <li>Media & Press</li>
+                            <li>Careers</li>
+                            <li>Help and Support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_4">
+                    <div class="quicklinks">QUICK LINKS</div>
+                    <div class="quicklinklist">
+                        <ul>
+                            <li>AMC Mutual Funds</li>
+                            <li>Calculators</li>
+                            <li>Glossary</li>
+                            <li>Open Demat Account</li>
+                            <li>Groww Digest</li>
+                            <li>Groww Academy</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="liner">
+                <hr>
+            </div>
+            <div class="topfooterinside_1">
+                <div class="rights">
+                    <p>&#169 2016-2020 Groww.All Rights Reserved, built with <span class="heart">♥</span> in India.</p>
+                </div>
+                <div class="images_1">{% load static %}<img src="{% static 'Home_images/app-store-logo.060773ea.svg' %}" alt=""></div>
+                <div class="images_2">{% load static %}<img src="{% static 'Home_images/google-play-badge.0547a72f.svg' %}" alt=""></div>
+            </div>
+        </div>
+        <div class="bfh">
+            <div class="bottomfooter">
+                <div class="bf1"><span style="color: white;">MOST POPULAR ON GROWW</span><span
+                        style="color: white;">VERSION - 2.3.7</span></div>
+                <div style="margin-top: 25px;">STOCK MARKET INDICES: &nbsp;<span><a>S&amp;P BSE
+                            SENSEX</a></span>&nbsp;|&nbsp; <span><a>S&amp;P BSE 100</a></span>&nbsp;|&nbsp;
+                    <span><a>NIFTY 100</a></span>&nbsp;|&nbsp; <span><a>NIFTY 50</a></span>&nbsp;|&nbsp; <span><a>NIFTY
+                            MIDCAP 100</a></span>&nbsp;|&nbsp; <span><a>NIFTY BANK</a></span>&nbsp;|&nbsp;
+                    <span><a>NIFTY NEXT 50</a></span></div>
+                <div class="uc" style="margin-top: 25px;">POPULAR MUTUAL FUNDS: &nbsp;<span><a>Axis Bluechip
+                            Fund</a></span>&nbsp;|&nbsp; <span><a>Motilal Oswal S&amp;P 500 Index
+                            Fund</a></span>&nbsp;|&nbsp; <span><a>Parag Parikh Long Term Equity
+                            Fund</a></span>&nbsp;|&nbsp; <span><a>SBI Small Cap Fund</a></span>&nbsp;|&nbsp;
+                    <span><a>HDFC Balanced Advantage Fund</a></span>&nbsp;|&nbsp; <span><a>Axis Long Term Equity
+                            Fund</a></span>&nbsp;|&nbsp; <span><a>UTI Nifty Index Fund</a></span>&nbsp;|&nbsp;
+                    <span><a>Axis Midcap Fund</a></span>&nbsp;|&nbsp; <span><a>SBI Bluechip Fund</a></span>&nbsp;|&nbsp;
+                    <span><a>Mirae Asset Emerging Bluechip Fund</a></span></div>
+                <div style="margin-top: 25px;">MUTUAL FUNDS COMPANIES: &nbsp;<span><a>ICICI
+                            PRUDENTIAL</a></span>&nbsp;|&nbsp; <span><a>HDFC</a></span>&nbsp;|&nbsp; <span><a>NIPPON
+                            INDIA</a></span>&nbsp;|&nbsp; <span><a>ADITYA BIRLA SUN LIFE</a></span>&nbsp;|&nbsp;
+                    <span><a>SBI</a></span>&nbsp;|&nbsp; <span><a>UTI</a></span>&nbsp;|&nbsp; <span><a>FRANKLIN
+                            TEMPLETON</a></span>&nbsp;|&nbsp; <span><a>KOTAK MAHINDRA</a></span>&nbsp;|&nbsp;
+                    <span><a>IDFC</a></span>&nbsp;|&nbsp; <span><a>DSP</a></span>&nbsp;|&nbsp;
+                    <span><a>AXIS</a></span>&nbsp;|&nbsp; <span><a>TATA</a></span>&nbsp;|&nbsp;
+                    <span><a>L&amp;T</a></span>&nbsp;|&nbsp; <span><a>SUNDARAM</a></span>&nbsp;|&nbsp;
+                    <span><a>PGIM</a></span>&nbsp;|&nbsp; <span><a>INVESCO</a></span>&nbsp;|&nbsp;
+                    <span><a>LIC</a></span>&nbsp;|&nbsp; <span><a>JM FINANCIAL</a></span>&nbsp;|&nbsp; <span><a>BARODA
+                            PIONEER</a></span>&nbsp;|&nbsp; <span><a>CANARA ROBECO</a></span>&nbsp;|&nbsp;
+                    <span><a>HSBC</a></span>&nbsp;|&nbsp; <span><a>IDBI</a></span>&nbsp;|&nbsp;
+                    <span><a>INDIABULLS</a></span>&nbsp;|&nbsp; <span><a>MOTILAL OSWAL</a></span>&nbsp;|&nbsp;
+                    <span><a>BNP PARIBAS</a></span>&nbsp;|&nbsp; <span><a>MIRAE ASSET</a></span>&nbsp;|&nbsp;
+                    <span><a>PRINCIPAL</a></span>&nbsp;|&nbsp; <span><a>BOI AXA</a></span>&nbsp;|&nbsp; <span><a>UNION
+                            KBC</a></span>&nbsp;|&nbsp; <span><a>TAURUS</a></span>&nbsp;|&nbsp;
+                    <span><a>EDELWEISS</a></span>&nbsp;|&nbsp; <span><a>NAVI</a></span>&nbsp;|&nbsp;
+                    <span><a>MAHINDRA</a></span>&nbsp;|&nbsp; <span><a>QUANTUM</a></span>&nbsp;|&nbsp;
+                    <span><a>PPFAS</a></span>&nbsp;|&nbsp; <span><a>IIFL</a></span>&nbsp;|&nbsp;
+                    <span><a>Quant</a></span>&nbsp;|&nbsp; <span><a>SHRIRAM</a></span>&nbsp;|&nbsp;
+                    <span><a>SAHARA</a></span>&nbsp;|&nbsp; <span><a>ITI</a></span></div>
+                <div style="margin-top:25px">TOOLS: &nbsp;<span><a>BROKERAGE CALCULATOR</a></span>&nbsp;|&nbsp;
+                    <span><a>MARGIN CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>SIP CALCULATOR</a></span>&nbsp;|&nbsp;
+                    <span><a>SWP CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>SUKANYA SAMRIDDHI YOJANA
+                            CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>MUTUAL FUND RETURNS
+                            CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>FD CALCULATOR</a></span>&nbsp;|&nbsp;
+                    <span><a>RD CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>EMI CALCULATOR</a></span>&nbsp;|&nbsp;
+                    <span><a>PPF CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>EPF CALCULATOR</a></span>&nbsp;|&nbsp;
+                    <span><a>NPS CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>GRATUITY CALCULATOR</a></span></div>
+                <div class="bf2">
+                    <div><a>NSE</a><span>|</span></div>
+                    <div><a>BSE</a><span>|</span></div>
+                    <div><a>Terms and Conditions</a><span>|</span></div>
+                    <div><a>Policies and Procedures</a><span>|</span></div>
+                    <div><a>Regulatory &amp; Other Info</a><span>|</span></div>
+                    <div><a>Privacy Policy</a><span>|</span></div>
+                    <div><a>Disclosure</a><span>|</span></div>
+                    <div><a>Security</a><span>|</span></div>
+                    <div><a>Download Forms</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

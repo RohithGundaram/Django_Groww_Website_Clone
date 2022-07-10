@@ -1,0 +1,522 @@
+<!-- {% load static %}
+<img src="{% static 'my_app/example.jpg' %}" alt="My image"> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Groww - Online Demat, Trading and Direct Mutual Fund Investment in India
+    </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'LP_style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'LP_images/icon.ico' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'LP_style_for_footer.css' %}">
+  </head>
+  <body>
+      <nav class="nav-bar anim">
+        <div class="top-left">
+          {% load static %}
+          <img
+            class=""
+            src="{% static 'LP_images/logo-dark-groww.83f43714.svg' %}"
+            width="148"
+            height="40"
+            alt="Groww Logo"
+            itemprop="logo"
+          />
+        </div>
+        <div class="top-right">
+          <div class="search">
+            <button><i class="fa fa-search"></i></button>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="What are you looking for today?"
+            />
+          </div>
+          <div class="button">
+            <button class="login" id="loginn" >Login/Register</button>
+          </div>
+        </div>
+      </nav>
+
+      <section class="middle">
+        <div class="middle-left anim">
+          <div class="mid-l-1">
+            <p>Invest in <span class="auto"></span></p>
+          </div>
+          <div class="mid-l-2">
+            Trusted by <span id="million">Millions</span> of Indians. Start
+            investing <br />
+            today
+          </div>
+          <div class="mid-l-3">
+            <button class="login getstarted">Get Started</button>
+          </div>
+        </div>
+
+        <div class="middle-right anim">
+          <div class="roww-1">
+            <div class="sub-box box-shadow">
+              <div class="icon">
+                {% load static %}
+                <img src="{% static 'LP_images/mfHome.af668dea.svg' %}" />
+              </div>
+              <div class="nameoficon">Mutual Funds</div>
+            </div>
+            <div class="sub-box box-shadow">
+              <div class="icon">
+              {% load static %}
+              <img src="{% static 'LP_images/stockHome.af2af225.svg' %}" /></div>
+              <div class="nameoficon">Stocks</div>
+            </div>
+          </div>
+          <div class="row-2">
+            <div class="sub-box box-shadow">
+              <div class="icon">
+              {% load static %}
+              <img src="{% static 'LP_images/optionHome.5e98a896.svg' %}" /></div>
+              <div class="nameoficon">Futures and Options</div>
+            </div>
+            <div class="sub-box box-shadow">
+              <div class="icon">
+              {% load static %}
+              <img src="{% static 'LP_images/usHome.fcb18f99.svg' %}" /></div>
+              <div class="nameoficon">US Stocks</div>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="sub-box box-shadow">
+              <div class="icon">
+              {% load static %}
+              <img src="{% static 'LP_images/ipoHome.b071ba94.svg' %}" /></div>
+              <div class="nameoficon">IPO</div>
+            </div>
+            <div class="sub-box box-shadow">
+              <div class="icon">
+              {% load static %}
+              <img src="{% static 'LP_images/fdHome.ba2c5441.svg' %}" /></div>
+              <div class="nameoficon">Fixed Deposits</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="middle2">
+        <div class="one"><span id="choice">OUR PRODUCTS</span></div>
+        <div class="two">Your Money. Your Choice.</div>
+        <div class="three">
+          <div class="row-item-1">
+            <div class="ic">
+            {% load static %}
+            <img src="{% static 'LP_images/stockHome.af2af225.svg' %}" /></div>
+            <div>Stocks</div>
+          </div>
+          <div class="row-item-2">
+            <div class="ic">
+            {% load static %}
+            <img src="{% static 'LP_images/mfHome.af668dea.svg' %}" /></div>
+            <div>Mutual Funds</div>
+          </div>
+          <div class="row-item-3">
+            <div class="ic">
+            {% load static %}
+            <img src="{% static 'LP_images/usHome.fcb18f99.svg' %}" /></div>
+            <div>US Stocks</div>
+          </div>
+          <div class="row-item-4">
+            <div class="ic">
+            {% load static %}
+            <img src="{% static 'LP_images/fdHome.ba2c5441.svg' %}" /></div>
+            <div>FDs</div>
+          </div>
+        </div>
+        <div class="four">
+          <div class="four-left">
+            {% load static %}
+            <img src="{% static 'LP_images/us.png' %}" />
+          </div>
+          <div class="four-right">
+            <div class="four-r-1">
+              <span id="zero">Zero</span> account charges
+            </div>
+            <div class="four-r-2">
+              <p>
+                You don't have to pay a single rupee for opening a stocks account
+                or account maintenance.
+              </p>
+            </div>
+            <div class="four-r-3">
+              <button class="login getstarted">Create account for free</button>
+            </div>
+          </div>
+        </div>
+        <div class="link">
+          <a href="#">View all products</a>
+        </div>
+      </section>
+
+      <section class="middle3">
+        <div class="middle3-contain">
+          {% load static %}
+          <img src="{% static 'LP_images/shield-groww.webp'%}" alt="" />
+          <div class="image-flex">
+            <div class="textonimage">Trusted by</div>
+            <div class="textonimage">30 Million+ users</div>
+            <div class="textonimage2">
+              Our cutting-edge technology ensure that all your information<br />remains
+              fully encrypted and secure.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="middle4">
+        <div class="klkg">Keep Learning. Keep Growing.</div>
+      </section>
+
+      <section class="middle5">
+        <div class="blog">
+          {% load static %}
+          <img src="{% static 'LP_images/blog1.webp'%}" alt="" />
+          <div class="sub-blog">
+            How to Select/Pick Stocks for <br />
+            Intraday
+          </div>
+        </div>
+        <div class="blog">
+          {% load static %}
+          <img src="{% static 'LP_images/blog2.webp'%}" alt="" />
+          <div class="sub-blog">
+            Beginners Guide to Mutual <br />
+            Funds
+          </div>
+        </div>
+        <div class="blog">
+          {% load static %}
+          <img src="{% static 'LP_images/blog3.webp'%}" alt="" />
+          <div class="sub-blog">
+            How to Diversify the Time of <br />
+            Market Volatility
+          </div>
+        </div>
+      </section>
+
+      <section class="link">
+        <div class="viewlink"><a href="#">View all articles</a></div>
+      </section>
+
+      <section class="middlesix">
+        <div class="right hp77Line"></div>
+        <span class="heading">In The Press</span>
+        <div class="left hp77Line"></div>
+      </section>
+
+      <section class="middle7">
+        <div class="press">
+          {% load static %}
+          <img src="{% static 'LP_images/yourstory.svg'%}" />
+        </div>
+        <div class="press">
+          {% load static %}
+          <img src="{% static 'LP_images/livemint.svg'%}" />
+        </div>
+        <div class="press">
+          {% load static %}
+          <img src="{% static 'LP_images/buisnessline.svg' %}" />
+        </div>
+        <div class="press">
+          {% load static %}
+          <img src="{% static 'LP_images/entrepreneur.svg' %}" />
+        </div>
+      </section>
+
+      <section class="middle8">
+        <div class="cpi">Creating proud investors.</div>
+        <div class="below-cpi">
+          <div class="f1">
+            You can feel the pride of being a Groww investor in their words.
+          </div>
+          <div class="f2"><a href="#">View More</a></div>
+        </div>
+
+        <div class="cards">
+          <div class="card1">
+            <div class="l1">
+              <div class="image">{% load static %}<img src="{% static 'LP_images/p1.webp'%}" /></div>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+            <div class="desc">
+              Groww.in was the platform where I first got onboard to MF and I
+              would have to say, even for a beginner like me it made things quite
+              easier to explore and invest.
+            </div>
+            <div class="uname">Ankit Puri</div>
+            <div class="desg">Product Specialist, Google</div>
+          </div>
+
+          <div class="card1">
+            <div class="l1">
+              <div class="image">{% load static %}<img src="{% static 'LP_images/p2.jpeg'%}" /></div>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+            <div class="desc">
+              Actually, the UI is extremely simple and easy for users to adapt,
+              that's what makes it unique. Many of my referrals have also joined
+              and enjoying GROWW.
+            </div>
+            <div class="uname">Amit Sharma</div>
+            <div class="desg">Solutions Architect, Amazon Web Services</div>
+          </div>
+
+          <div class="card1">
+            <div class="l1">
+              <div class="image">{% load static %}<img src="{% static 'LP_images/p3.jpg' %}" /></div>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+            <div class="desc">
+              “If you are one of those who would like to take control of how you
+              save, use Groww. It’s ridiculously easy portal. It just took me 5
+              mins to set up and invest.
+            </div>
+            <div class="uname">Roopa Ambekar</div>
+            <div class="desg">Founder of Uber Medspa & Style Lounge</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="middle9">
+        <div class="nine-left">
+          <div class="n1">Invest anywhere,</div>
+          <div class="n1">anytime.</div>
+          <div class="n2">
+            Don’t worry about which device to use. Because we’re in every one of
+            them.
+          </div>
+          <div class="nflex">
+            <div class="nr1">
+              <div class="nrimg">{% load static %}<img src="{% static 'LP_images/stayontop.svg' %}" /></div>
+              <div>
+                <div class="hing">Stay on top of everything</div>
+                <div class="hing2">Keep track of your investments at anytime with Groww.</div>
+              </div>
+            </div>
+            <div class="nr1">
+              <div class="nrimg">{% load static %}<img src="{% static 'LP_images/alwaysinsync.svg'%}" /></div>
+              <div>
+                <div class="hing">Always in Sync</div>
+                <div class="hing2">Groww will take care of
+                synchronizing data so you can<br>
+                focus on investing.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="nine-right">
+          <div class="flex-col">
+            <div class="col1">
+              <div class="appcol1">{% load static %}<img src="{% static 'LP_images/iosapp.webp'%}"></div>
+              <div class="appcol1">{% load static %}<img src="{% static 'LP_images/androidapp.webp'%}"></div>
+            </div>
+            <div class="col2">
+              <div class="appcol2">{% load static %}<img src="{% static 'LP_images/webapp.webp'%}"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="middle10">
+        <div class="m10-left">
+          <div class="line1">We’re with you, at every step.</div>
+          <div class="line2">For any query you have, find the answer quickly on our Help & Support. Need a little more help? We’re happy to talk via call or chat.</div>
+          <div class="line3"><button class="getintouch">Get In Touch</button></div>
+        </div>
+        <div class="m10-right">
+          {% load static %}
+          <img src="{% static 'LP_images/hns-support-img.webp' %}">
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="line topfooter">
+            <div class="topfooterinside">
+                <div class="col_1">
+                    <div class="title">
+                        <div>
+                            {% load static %}
+                            <img src="{% static 'LP_images/logo.jpg' %}" alt="Groww" class="logo">
+                        </div>
+                        <div class="title">
+                            Groww
+                        </div>
+                    </div>
+                    <div class="address">
+                        <ul>
+                            <li>No. 11, 2nd floor, 80 FT Road</li>
+                            <li>4th block, S.T Bed, Koramangla</li>
+                            <li>Bengaluru - 560034</li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <div>{% load static %}<a href="#" style="width: 41px;" class="fa fa-twitter"></a></div>
+                        <div>{% load static %}<a style="width: 41px;" href="#" class="fa fa-facebook"></a></div>
+                        <div>{% load static %}<a style="width: 41px;" href="#" class="fa fa-youtube"></a></div>
+                        <div>{% load static %}<a style="width: 41px;" href="#" class="fa fa-instagram"></a></div>
+                        <div>{% load static %}<a style="width: 41px;" href="#" class="fa fa-linkedin"></a></div>
+                        <div>{% load static %}<a href="#" style="width: 41px;" class="fa fa-telegram"></a></div>
+                    </div>
+                </div>
+                <div class="col_2">
+                    <div class="products">PRODUCTS</div>
+                    <div class="productlist">
+                        <ul>
+                            <li>Stocks</li>
+                            <li>Futures & Options</li>
+                            <li>Mutual Funds</li>
+                            <li>Fixed Deposits</li>
+                            <li>US Stocks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_3">
+                    <div class="GROWW">GROWW</div>
+                    <div class="GROWWlist">
+                        <ul>
+                            <li>About Us</li>
+                            <li>Pricing</li>
+                            <li>Blog</li>
+                            <li>Media & Press</li>
+                            <li>Careers</li>
+                            <li>Help and Support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_4">
+                    <div class="quicklinks">QUICK LINKS</div>
+                    <div class="quicklinklist">
+                        <ul>
+                            <li>AMC Mutual Funds</li>
+                            <li>Calculators</li>
+                            <li>Glossary</li>
+                            <li>Open Demat Account</li>
+                            <li>Groww Digest</li>
+                            <li>Groww Academy</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="liner">
+                <hr>
+            </div>
+            <div class="topfooterinside_1">
+                <div class="rights">
+                    <p>&#169 2016-2020 Groww.All Rights Reserved, built with <span class="heart">♥</span> in India.</p>
+                </div>
+                <div class="images_1">{% load static %}<img src="{% static 'LP_images/app-store-logo.060773ea.svg' %}" alt=""></div>
+                <div class="images_2">{% load static %}<img src="{% static 'LP_images/google-play-badge.0547a72f.svg' %}" alt=""></div>
+            </div>
+        </div>
+        <div class="bfh">
+            <div class="bottomfooter">
+                <div class="bf1"><span style="color: white;">MOST POPULAR ON GROWW</span><span
+                        style="color: white;">VERSION - 2.3.7</span></div>
+                <div style="margin-top: 25px;">STOCK MARKET INDICES: &nbsp;<span><a>S&amp;P BSE
+                            SENSEX</a></span>&nbsp;|&nbsp; <span><a>S&amp;P BSE 100</a></span>&nbsp;|&nbsp;
+                    <span><a>NIFTY 100</a></span>&nbsp;|&nbsp; <span><a>NIFTY 50</a></span>&nbsp;|&nbsp; <span><a>NIFTY
+                            MIDCAP 100</a></span>&nbsp;|&nbsp; <span><a>NIFTY BANK</a></span>&nbsp;|&nbsp;
+                    <span><a>NIFTY NEXT 50</a></span></div>
+                <div class="uc" style="margin-top: 25px;">POPULAR MUTUAL FUNDS: &nbsp;<span><a>Axis Bluechip
+                            Fund</a></span>&nbsp;|&nbsp; <span><a>Motilal Oswal S&amp;P 500 Index
+                            Fund</a></span>&nbsp;|&nbsp; <span><a>Parag Parikh Long Term Equity
+                            Fund</a></span>&nbsp;|&nbsp; <span><a>SBI Small Cap Fund</a></span>&nbsp;|&nbsp;
+                    <span><a>HDFC Balanced Advantage Fund</a></span>&nbsp;|&nbsp; <span><a>Axis Long Term Equity
+                            Fund</a></span>&nbsp;|&nbsp; <span><a>UTI Nifty Index Fund</a></span>&nbsp;|&nbsp;
+                    <span><a>Axis Midcap Fund</a></span>&nbsp;|&nbsp; <span><a>SBI Bluechip Fund</a></span>&nbsp;|&nbsp;
+                    <span><a>Mirae Asset Emerging Bluechip Fund</a></span></div>
+                <div style="margin-top: 25px;">MUTUAL FUNDS COMPANIES: &nbsp;<span><a>ICICI
+                            PRUDENTIAL</a></span>&nbsp;|&nbsp; <span><a>HDFC</a></span>&nbsp;|&nbsp; <span><a>NIPPON
+                            INDIA</a></span>&nbsp;|&nbsp; <span><a>ADITYA BIRLA SUN LIFE</a></span>&nbsp;|&nbsp;
+                    <span><a>SBI</a></span>&nbsp;|&nbsp; <span><a>UTI</a></span>&nbsp;|&nbsp; <span><a>FRANKLIN
+                            TEMPLETON</a></span>&nbsp;|&nbsp; <span><a>KOTAK MAHINDRA</a></span>&nbsp;|&nbsp;
+                    <span><a>IDFC</a></span>&nbsp;|&nbsp; <span><a>DSP</a></span>&nbsp;|&nbsp;
+                    <span><a>AXIS</a></span>&nbsp;|&nbsp; <span><a>TATA</a></span>&nbsp;|&nbsp;
+                    <span><a>L&amp;T</a></span>&nbsp;|&nbsp; <span><a>SUNDARAM</a></span>&nbsp;|&nbsp;
+                    <span><a>PGIM</a></span>&nbsp;|&nbsp; <span><a>INVESCO</a></span>&nbsp;|&nbsp;
+                    <span><a>LIC</a></span>&nbsp;|&nbsp; <span><a>JM FINANCIAL</a></span>&nbsp;|&nbsp; <span><a>BARODA
+                            PIONEER</a></span>&nbsp;|&nbsp; <span><a>CANARA ROBECO</a></span>&nbsp;|&nbsp;
+                    <span><a>HSBC</a></span>&nbsp;|&nbsp; <span><a>IDBI</a></span>&nbsp;|&nbsp;
+                    <span><a>INDIABULLS</a></span>&nbsp;|&nbsp; <span><a>MOTILAL OSWAL</a></span>&nbsp;|&nbsp;
+                    <span><a>BNP PARIBAS</a></span>&nbsp;|&nbsp; <span><a>MIRAE ASSET</a></span>&nbsp;|&nbsp;
+                    <span><a>PRINCIPAL</a></span>&nbsp;|&nbsp; <span><a>BOI AXA</a></span>&nbsp;|&nbsp; <span><a>UNION
+                            KBC</a></span>&nbsp;|&nbsp; <span><a>TAURUS</a></span>&nbsp;|&nbsp;
+                    <span><a>EDELWEISS</a></span>&nbsp;|&nbsp; <span><a>NAVI</a></span>&nbsp;|&nbsp;
+                    <span><a>MAHINDRA</a></span>&nbsp;|&nbsp; <span><a>QUANTUM</a></span>&nbsp;|&nbsp;
+                    <span><a>PPFAS</a></span>&nbsp;|&nbsp; <span><a>IIFL</a></span>&nbsp;|&nbsp;
+                    <span><a>Quant</a></span>&nbsp;|&nbsp; <span><a>SHRIRAM</a></span>&nbsp;|&nbsp;
+                    <span><a>SAHARA</a></span>&nbsp;|&nbsp; <span><a>ITI</a></span></div>
+                <div style="margin-top:25px">TOOLS: &nbsp;<span><a>BROKERAGE CALCULATOR</a></span>&nbsp;|&nbsp;
+                    <span><a>MARGIN CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>SIP CALCULATOR</a></span>&nbsp;|&nbsp;
+                    <span><a>SWP CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>SUKANYA SAMRIDDHI YOJANA
+                            CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>MUTUAL FUND RETURNS
+                            CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>FD CALCULATOR</a></span>&nbsp;|&nbsp;
+                    <span><a>RD CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>EMI CALCULATOR</a></span>&nbsp;|&nbsp;
+                    <span><a>PPF CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>EPF CALCULATOR</a></span>&nbsp;|&nbsp;
+                    <span><a>NPS CALCULATOR</a></span>&nbsp;|&nbsp; <span><a>GRATUITY CALCULATOR</a></span></div>
+                <div class="bf2">
+                    <div><a>NSE</a><span>|</span></div>
+                    <div><a>BSE</a><span>|</span></div>
+                    <div><a>Terms and Conditions</a><span>|</span></div>
+                    <div><a>Policies and Procedures</a><span>|</span></div>
+                    <div><a>Regulatory &amp; Other Info</a><span>|</span></div>
+                    <div><a>Privacy Policy</a><span>|</span></div>
+                    <div><a>Disclosure</a><span>|</span></div>
+                    <div><a>Security</a><span>|</span></div>
+                    <div><a>Download Forms</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% comment %} <script type="text/javascript">
+        document.getElementById("loginn").onclick = function () {
+            location.href = "/Dashboard/Dashboard_index.html";
+        };
+    </script> {% endcomment %}
+  </body>
+</html>
+
