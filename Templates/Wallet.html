@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Groww_Wallet</title>
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'Home_images/icon.ico' %}" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Home_style.css' %}">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Home_utils.css' %}">
+    {%load static %}
+    <link rel="stylesheet" href="{% static 'Wallet.css' %}">
+</head>
+<body>
+    <nav class="topnav">
+        <div class="topleft">
+            <div>
+                {% load static %}
+                <img src="{% static 'Home_images/logo.jpg' %}" alt="Groww" class="logo">
+            </div>
+            <div class="title">
+                Groww
+            </div>
+        </div>
+
+        <div class="toplinks">
+            <div>
+                {% load static %}
+                <a href="" class="nav_1">Explore</a>
+            </div>
+            <div>
+                {% load static %}
+                <a href="" class="nav_2">Investment</a>
+            </div>
+        </div>
+
+        <div class="sb-example-1">
+            <div class="search">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+                <input type="text" class="searchTerm" placeholder="What are you looking for today?">
+            </div>
+        </div>
+
+        <div class="topicons">
+            <div>
+                {% load static %}
+                <a href="">
+                    <span class="material-symbols-outlined">notifications</span>
+                </a>
+            </div>
+            <div>
+                {% load static %}
+                <a href="">
+                    <span class="material-symbols-outlined">wallet</span>
+                </a>
+            </div>
+            <div>
+                {% load static %}
+                <a href="">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            {% load static %}
+            <img src="{% static 'Home_images/login_img.png' %}" alt="login" class="circle">
+        </div>
+    </nav>
+
+    <nav class="midnav" style="width: 17.5% ; margin-top: 20px">
+        <div>
+            {% load static %}
+            <a href="#">INR Balance</a>
+        </div>
+        <div>
+            {% load static %}
+            <a href="#">USD Balance</a>
+        </div>
+    </nav>
+    <hr style="height:0.5px;border-width:0;    color: #d8d8d8;background-color: #ece6e6;">
+    
+    <div class="mid">
+        <div class="midleft">
+            <div class="ml_one">
+                <div class="ttl">Balance for Stocks, MF</div>
+                <div class="money">
+                    <div class="amt_rs">₹993.</div>
+                    <div class="amt_ps">04</div>
+                </div>
+            </div>
+            <div class="ml_two">
+                <div class="ml_t_1">
+                    <div class="m1_t_1_1">Closing Balance (CB)</div>
+                    <div class="m1_t_1_2">₹2272.88</div>
+                </div>
+                <div class="ml_t_2">
+                    <div class="m1_t_2_1"><a href="#">Stock margin ></a></div>
+                    <div class="m1_t_2_2">-₹1,279.84</div>
+                </div>
+                <hr style="height:0.5px;border-width:0;    color: #d8d8d8;background-color: #ece6e6;">
+                <div class="ml_t_3">
+                    <div class="m1_t_3_1">Balance for Stocks, MF</div>
+                    <div class="m1_t_3_2">₹993.04</div>
+                </div>
+            </div>
+            <hr style="height:0.5px;border-width:0;    color: #d8d8d8;background-color: #ece6e6;">
+            <div class="ml_three">
+                    <a href="#">All Transactions</a>
+            </div>
+        </div>
+        <div class="midright">
+            <nav class="midnav" style="width: 11.5% ; margin-top: 20px">
+                <div>
+                    {% load static %}
+                    <a href="#">Deposit</a>
+                </div>
+                <div>
+                    {% load static %}
+                    <a href="#">Withdraw</a>
+                </div>
+            </nav>
+            <div class="mr_1">
+                <div class="mr_1_1">Enter Amount</div>
+                <div class="mr_1_2">₹</div>
+                <div class="mr_1_3"><input class="paisa" type="text" placeholder="5000"></div>
+            </div>
+            <div class="mr_2">
+                <button>+ ₹1,000</button>
+                <button>+ ₹5,000</button>
+            </div>
+            <hr style="height:0.5px;border-width:0;    color: #d8d8d8;background-color: #ece6e6;">
+            <div class="mr_3">
+                <div class="mr_3_1">Pay Using:</div>
+                <div class="mr_3_2"><a href="#">More Options</a></div>
+            </div>
+            <div class="mr_4">
+                <div class="mr_4_1">
+                    {% load static %}
+                    <img src="{% static 'Wallet_images/bhim_logo.png' %}" alt="bhim">
+                </div>
+                <div class="mr_4_2">
+                    <div class="upi_id"><input type="text" placeholder="Enter UPI ID"></div>
+                    <div class="holder">CBIN - XXXX4665</div>
+                </div>
+            </div>
+            <div class="mr_5"><button class="deposit">DEPOSIT MONEY</button></div>
+        </div>
+    </div>
+</body>
+</html>

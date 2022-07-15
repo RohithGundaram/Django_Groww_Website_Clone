@@ -6,3 +6,6 @@ def LandingPage(request):
 
 def Home(request):
     return render(request, 'Dashboard_index.html')
+
+def Wallet(request):
+    return render(request, 'Wallet.html')

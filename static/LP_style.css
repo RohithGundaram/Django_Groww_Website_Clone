@@ -37,12 +37,11 @@
     background-color: white;
     border-style: none;
     color: grey;
-    
 }
 .search input{
     /* background-color: white; */
     width: inherit;
-    padding: 5px;
+    padding: 2px;
     border-style: none;
     border-color: white;
     outline: none;
@@ -51,7 +50,6 @@
 .search{
     margin-top:10px;
     box-shadow: 0 0 2.5px 2.5px rgb(233, 225, 225);
-    padding: 10px;
     border-radius: 8px;
     width: 60%;
 }
