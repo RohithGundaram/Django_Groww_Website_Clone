@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Groww Balance | INR</title>
     {% load static %}
+    <link rel="script" href="{% static 'script.js' %}">
+    {% load static %}
     <link rel="icon" type="image/x-icon" href="{% static 'Home_images/icon.ico' %}" />
     {% load static %}
     <link rel="stylesheet" href="{% static 'Home_style.css' %}">
@@ -17,7 +19,7 @@
     {%load static %}
     <link rel="stylesheet" href="{% static 'Wallet.css' %}">
 </head>
-<body>
+<body  >
     <nav class="topnav">
         <div class="topleft">
             <div>
@@ -116,7 +118,7 @@
             </div>
         </div>
         <div class="midright wbox wbox-shadow">
-            <nav class="midnav" style="width: 13% ; margin-top: 20px">
+            <nav class="midnav" style="width: 12% ; margin-top: 10px">
                 <div>
                     {% load static %}
                     <a href="#" class="Deposit">Deposit</a>
@@ -126,10 +128,11 @@
                     <a href="#" class="Withdraw">Withdraw</a>
                 </div>
             </nav>
+            <hr style="height:0.6px;border-width:0;    color: #d8d8d8;background-color: #ece6e6;">
             <div class="mr_1">
                 <div class="mr_1_1">Enter Amount</div>
                 <div class="mr_1_2">₹</div>
-                <div class="mr_1_3"><input class="paisa" type="text" placeholder="5000"></div>
+                <div class="mr_1_3"><input class="paisa" id="paisa" type="number" placeholder="5000"></div>
             </div>
             <div class="mr_2">
                 <button>+ ₹1,000</button>
