@@ -11,7 +11,7 @@ body{
     padding-top: 20px;
 }
 
-a{
+.links {
     text-decoration: none;
 }
 
@@ -207,7 +207,7 @@ link{
 }
 
 .ml_one{
-    width: 90%;
+    width: 93%;
     display: flex;
     justify-content: left;
     flex-direction: column;
@@ -230,7 +230,8 @@ link{
     font-weight: bolder;
 }
 .amt_ps{
-    align-self: flex-start;
+    padding-top:30px;
+    font-size: 19px;
 }
 .ml_two{
     display: flex;
@@ -432,3 +433,11 @@ input:focus{
     color: white;
     border: 0px;
 }
+
+.links{
+    color: #00d09c;
+}
+.transc{
+    color: #44475b;
+}
+
