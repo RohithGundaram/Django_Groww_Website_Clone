@@ -441,5 +441,12 @@ input:focus{
 }
 .transc{
     color: #44475b;
+    display: flex;
+    font-size: 25px;
+    padding: 25px 0px;
 }
 
+.arrow{
+    display: flex;
+    margin-left: 550px;
+}
