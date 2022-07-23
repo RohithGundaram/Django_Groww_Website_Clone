@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Home.views import LandingPage, Home, Wallet
+from Home import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',LandingPage,name='LandingPage'),
     path('Home/', Home, name='Home'),
     path('Wallet/', Wallet, name='Wallet'),
+    path('withdraw/',views.wallet1,name='withdraw')
 ]
