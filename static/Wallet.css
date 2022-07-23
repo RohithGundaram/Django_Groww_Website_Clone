@@ -295,6 +295,10 @@ link{
     margin-bottom: 20px;
 }
 
+.midnav{
+    margin-left: 10px;
+}
+
 .wmidnav a{
   text-decoration: none;
   color: #44475b;
@@ -448,5 +452,5 @@ input:focus{
 
 .arrow{
     display: flex;
-    margin-left: 550px;
+    margin-left: 0px;
 }
