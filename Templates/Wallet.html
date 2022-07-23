@@ -122,13 +122,14 @@
             <nav class="midnav" style="width: 12% ; margin-top: 10px">
                 <div>
                     {% load static %}
-                    <a href="#" class="Deposit">Deposit</a>
+                    <a href="{% url 'Wallet'%}" class="Deposit">Deposit</a>
                 </div>
                 <div>
                     {% load static %}
-                    <a href="#" class="Withdraw">Withdraw</a>
+                    <a href="{% url 'withdraw' %}" class="Withdraw">Withdraw</a>
                 </div>
             </nav>
+            {% block inside_deposit_and_withdraw %}
             <hr style="height:0.6px;border-width:0;    color: #d8d8d8;background-color: #ece6e6;">
             <div class="mr_1">
                 <div class="mr_1_1">Enter Amount</div>
@@ -155,6 +156,8 @@
                 </div>
             </div>
             <div class="mr_5"><button class="deposit">DEPOSIT MONEY</button></div>
+            {% endblock inside_deposit_and_withdraw %}
+            
         </div>
     </div>
 </body>

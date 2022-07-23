@@ -9,3 +9,6 @@ def Home(request):
 
 def Wallet(request):
     return render(request, 'Wallet.html')
+
+def wallet1(request):
+    return render(request,'wallet1.html')
